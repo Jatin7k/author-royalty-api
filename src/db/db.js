@@ -11,21 +11,21 @@ db.serialize(() => {
       ifsc TEXT
     )`);
 
-  db.run(`CREATE TABLE IF NOT EXIST books (
+  db.run(`CREATE TABLE IF NOT EXISTS books (
       id INTEGER PRIMARY KEY,
       title TEXT,
       author_id INTEGER,
       royalty INTEGER
     )`);
 
-  db.run(`CREATE TABLE IF NOT EXIST sales (
+  db.run(`CREATE TABLE IF NOT EXISTS sales (
       id INTEGER PRIMARY KEY AUTOINCREMENT,
       book_id INTEGER,
       quantity INTEGER,
       sale_date TEXT
     )`);
 
-  db.run(`CREATE TABLE IF NOT EXIST withdrawals (
+  db.run(`CREATE TABLE IF NOT EXISTSS withdrawals (
       id INTEGER PRIMARY KEY AUTOINCREMENT,
       author_id INTEGER,
       amount INTEGER,
