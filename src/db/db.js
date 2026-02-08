@@ -25,7 +25,7 @@ db.serialize(() => {
       sale_date TEXT
     )`);
 
-  db.run(`CREATE TABLE IF NOT EXISTSS withdrawals (
+  db.run(`CREATE TABLE IF NOT EXISTS withdrawals (
       id INTEGER PRIMARY KEY AUTOINCREMENT,
       author_id INTEGER,
       amount INTEGER,
